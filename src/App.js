@@ -4,19 +4,23 @@ import React, { useState } from "react";
 const playerRecord = {
   Ronaldo: [
     { type: "International Trophies", noOfTrophies: "2" },
-    { type: "Club Trophies", noOfTrophies: "32" }
+    { type: "Club Trophies", noOfTrophies: "32" },
+    { type: "FIFA World cup", noOfTrophies: "4" }
   ],
   Messi: [
     { type: "International Trophies", noOfTrophies: "1" },
-    { type: "Club Trophies", noOfTrophies: "35" }
+    { type: "Club Trophies", noOfTrophies: "35" },
+    { type: "FIFA World cup", noOfTrophies: "3" }
   ],
   Iniesta: [
     { type: "International Trophies", noOfTrophies: "3" },
-    { type: "Club Trophies", noOfTrophies: "34" }
+    { type: "Club Trophies", noOfTrophies: "34" },
+    { type: "FIFA World cup", noOfTrophies: "3" }
   ],
   Alves: [
     { type: "International Trophies", noOfTrophies: "4" },
-    { type: "Club Trophies", noOfTrophies: "38" }
+    { type: "Club Trophies", noOfTrophies: "38" },
+    { type: "FIFA World cup", noOfTrophies: "3" }
   ]
 };
 
@@ -66,7 +70,8 @@ export default function App() {
           <li
             key={trophy.type}
             style={{
-              width: "60%",
+              width: "40%",
+              maxWidth: "300px",
               textAlign: "center",
               listStyle: "none",
               padding: "1rem ",
